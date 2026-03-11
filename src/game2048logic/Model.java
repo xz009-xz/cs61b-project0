@@ -219,10 +219,11 @@ public class Model {
     }
 
     public void tilt(Side side) {
-
+        board.setViewingPerspective(side);
         for(int x = 0;x<4;x++){
             tiltColumn(x);
         }
+        board.setViewingPerspective(Side.NORTH);
         // TODO: Tasks 8 and 9. Fill in this function.
     }
 
